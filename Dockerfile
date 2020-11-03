@@ -28,6 +28,7 @@ RUN make install
 
 WORKDIR /src
 RUN git clone https://github.com/twanvl/MagicSetEditor2 .
+RUN git checkout v2.1.2
 ADD CMakeLists.patch .
 RUN git apply CMakeLists.patch
 
